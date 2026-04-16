@@ -1,0 +1,17 @@
+.lato {
+    font-family: lato;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: jost;
+    src: url(Jost-Regular.ttf);
+}
+
+.jost {
+    font-family: jost;
+}
