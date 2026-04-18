@@ -24,3 +24,23 @@ let iphone13 = document.querySelector("#iphone13");
 iphone13.addEventListener("click", () => {
     window.location.href = "mobile-products/iphone-13.html"
 })
+
+let spottedWatch = document.querySelector("#spottedWatch");
+spottedWatch.addEventListener("click", () => {
+    window.location.href = "smart-watches/spotted-watch.html"
+})
+
+let pinkWatch = document.querySelector("#pinkWatch");
+pinkWatch.addEventListener("click", () => {
+    window.location.href = "smart-watches/pink-watch.html"
+})
+
+let heavyWatch = document.querySelector("#heavyWatch");
+heavyWatch.addEventListener("click", () => {
+    window.location.href = "smart-watches/heavy-watch.html"
+})
+
+let blackWatch = document.querySelector("#blackWatch");
+blackWatch.addEventListener("click", () => {
+    window.location.href = "smart-watches/black-watch.html"
+})
