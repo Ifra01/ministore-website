@@ -44,3 +44,7 @@ let blackWatch = document.querySelector("#blackWatch");
 blackWatch.addEventListener("click", () => {
     window.location.href = "smart-watches/black-watch.html"
 })
+
+
+
+
