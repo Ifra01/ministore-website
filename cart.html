@@ -1,5 +1,6 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,10 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
-  <section>
+
+    <section>
         <header class="py-4 md:px-[20px] lg:px-[160px]">
             <div class="max-w-[1400px] flex justify-between md:items-center md:px-0 px-[20px]">
                 <figure><img src="images/Logo.png" alt=""></figure>
@@ -23,14 +25,15 @@
                         <ul class="flex text-center md:flex-row flex-col gap-7">
                             <li class="md:border-none border-b-2 border-[#D7DDDF]"><a
                                     class="text-[#272727] text-[14px] uppercase lato" href="index.html">home</a></li>
-                            <li class="md:border-none border-b-2 border-[#D7DDDF]"><a class="text-[14px] text-[#72AEC8] lato uppercase"
-                                    href="store.html">store</a></li>
-                            <li class="md:border-none border-b-2 border-[#D7DDDF]"><a class="text-[14px] text-[#272727] lato uppercase"
-                                    href="about.html">about</a></li>
-                            <li class="md:border-none border-b-2 border-[#D7DDDF]"><a class="text-[14px] text-[#272727] lato uppercase"
-                                    href="blog.html">blogs</a></li>
-                            <li class="md:border-none border-b-2 border-[#D7DDDF]"><a class="text-[14px] text-[#272727] lato uppercase"
-                                    href="contact.html">contact</a></li>
+                            <li class="md:border-none border-b-2 border-[#D7DDDF]"><a
+                                    class="text-[14px] text-[#72AEC8] lato uppercase" href="store.html">store</a></li>
+                            <li class="md:border-none border-b-2 border-[#D7DDDF]"><a
+                                    class="text-[14px] text-[#272727] lato uppercase" href="about.html">about</a></li>
+                            <li class="md:border-none border-b-2 border-[#D7DDDF]"><a
+                                    class="text-[14px] text-[#272727] lato uppercase" href="blog.html">blogs</a></li>
+                            <li class="md:border-none border-b-2 border-[#D7DDDF]"><a
+                                    class="text-[14px] text-[#272727] lato uppercase" href="contact.html">contact</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="flex justify-center gap-5">
@@ -46,11 +49,83 @@
         </header>
     </section>
 
-    <section id="cartDiv"></section>
+    <section class="bg-[#D7DDDF] text-center py-20">
+        <h1 class="jost font-light text-[75px] text-[#272727] uppercase pt-0">cart</h1>
+        <a class="lato text-[#3a3a3a] ">Home > <span
+                class="text-[#72AEC8] underline underline-offset-2 decoration-[#72AEC8]">cart</span></a>
+    </section>
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[50%_auto_auto] lg:px-[130px] pt-20 px-5">
+        <div>
+            <h1 class="jost text-[20px] text-[#272727] uppercase border-b border-[#CDCDCD] pb-8">Product</h1>
+            <div class="grid grid-cols-[30%_auto] items-center gap-4 mb-8 py-4">
+                <img src="images/iphone12.png" alt="">
+                <div>
+                    <h1 class="jost text-[20px] text-[#272727] uppercase">Iphone 13</h1>
+                    <h1 class="lato text-[20px] text-[#72AEC8]">$1500.00</h1>
+                </div>
+            </div>
+            <!-- <div class="product-card">
+                <h3>Product Name</h3>
+                <p>Price: ₹<span id="price">999</span></p> -->
+
+
+
+            <!-- <p>Total: ₹<span id="total">999</span></p>
+                <button id="addToCart">Add to Cart</button>
+            </div> -->
+
+        </div>
+        <div class="">
+            <h1 class="jost text-[20px] text-[#272727] uppercase border-b border-[#CDCDCD] pb-8">quantity</h1>
+            <div class="quantity-counter flex items-center gap-2 pt-3 h-40 md:h-63">
+                <button id="decrease"
+                    class="outline-1 -outline-offset-1 outline-[#D9D9D9] h-[44px] w-[44px] shadow-lg ">-</button>
+                <span id="quantity"
+                    class="outline-1 -outline-offset-1 outline-[#D9D9D9] h-[44px] w-[90px]  shadow-lg flex justify-center items-center">1</span>
+                <button id="increase"
+                    class="outline-1 -outline-offset-1 outline-[#D9D9D9] h-[44px] w-[44px] shadow-lg py-1 ">+</button>
+            </div>
+            <script>let quantity = 1;
+                const price = 1500;
+
+                document.getElementById('decrease').addEventListener('click', () => {
+                    if (quantity > 1) {
+                        quantity--;
+                        updateDisplay();
+                    }
+                });
+
+                document.getElementById('increase').addEventListener('click', () => {
+                    quantity++;
+                    updateDisplay();
+                });
+
+                function updateDisplay() {
+                    document.getElementById('quantity').textContent = quantity;
+                    document.getElementById('total').textContent = '$' + (price * quantity);
+                }
+
+                document.getElementById('addToCart').addEventListener('click', () => {
+                    alert(`Added ${quantity} items to cart! Total: ₹${price * quantity}`);
+                });
+
+               
+
+            </script>
+        </div>
+        <div>
+            <h1 class="jost text-[20px] text-[#272727] uppercase border-b border-[#CDCDCD] pb-8">subtotal</h1>
+            <h1 id="total"
+                class="text-[40px] text-[#72AEC8] lato h-40 md:h-63  flex items-center">
+                $1500.00</h1>
+        </div>
+    
+    </section>
+
+    <!-- <section id="cartDiv"></section> -->
 
     <script src="app.js"></script>
 </body>
+
 </html>
-
-
-
