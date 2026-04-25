@@ -45,18 +45,12 @@ blackWatch.addEventListener("click", () => {
     window.location.href = "smart-watches/black-watch.html"
 })
 
-// let added = document.querySelector("#added")
-// added.addEventListener("click", ()=>{
-//     window.location.replace ("../cart.html");
-// })
 
-        // alert('JavaScript is working!');
-        // console.log('Inline script running');
+let arr = [
+    arr1 = {
         
-        // document.getElementById('added').addEventListener('click', function() {
-        //     alert('Button clicked!');
-        //     window.location.href = '../cart.html';
-        // });
+    }
+]
 
 
 
